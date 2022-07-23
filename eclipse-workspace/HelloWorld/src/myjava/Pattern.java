@@ -1,0 +1,125 @@
+package myjava;
+
+public class Pattern {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+
+		pattern28(5);
+
+	}
+	
+	
+	static void pattern1(int n)
+	{
+		for(int row=1;row<=n;row++)
+		{
+			//for every row run the column
+			for(int col=1;col<=row;col++)
+			{
+				System.out.print("*");
+			}
+			
+			//when row is printed add the new line 
+			
+			System.out.println();
+		}
+	}
+	
+	static void pattern2(int n)
+	{
+		for(int row=1;row<=n;row++)
+		{
+			//for every row run the column
+			for(int col=1;col<=n;col++)
+			{
+				System.out.print("*");
+			}
+			
+			//when row is printed add the new line 
+			
+			System.out.println();
+		}
+	}
+	static void pattern3(int n)
+	{
+		for(int row=1;row<=n;row++)
+		{
+			//for every row run the column
+			for(int col=n;col>=row;col--)
+			{
+				System.out.print("*");
+			}
+			
+			//when row is printed add the new line 
+			
+			System.out.println();
+		}
+	}
+	static void pattern4(int n)
+	{
+		for(int row=1;row<=n;row++)
+		{
+			//for every row run the column
+			for(int col=1;col<=row;col++)
+			{
+				System.out.print(col);
+			}
+			
+			//when row is printed add the new line 
+			
+			System.out.println();
+		}
+	}
+	static void pattern5(int n)
+	{
+		for(int row=1;row<=2*n-1;row++ )
+		{
+			int no_of_coloumns=row;
+			
+			if(row>n)
+			{
+				 no_of_coloumns=2*n-row;
+			}
+			
+				
+			for(int col=1;col<=no_of_coloumns;col++)
+			{
+				System.out.print("*");
+				
+			}
+			System.out.println();
+			
+		}
+	}
+	static void pattern28(int n)
+	{
+		for(int row=1;row<=2*n-1;row++ )
+		{
+			int no_of_coloumns=row;
+			
+			
+			
+			if(row>n)
+			{
+				 no_of_coloumns=2*n-row;
+			}
+			for(int space=1;space<=n-no_of_coloumns;space++)
+			{
+				System.out.print(" ");
+			}
+			
+				
+			for(int col=1;col<=no_of_coloumns;col++)
+			{
+				System.out.print("* ");
+				
+			}
+			System.out.println();	
+			
+		}
+		
+	
+}
+}
